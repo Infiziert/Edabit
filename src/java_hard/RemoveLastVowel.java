@@ -33,7 +33,7 @@ public class RemoveLastVowel {
         return id;
     }
 
-    public static String reverse(final String str) {
+    public static String reverse(String str) {
         char[] c_arr = str.toCharArray();
         String out = "";
         for (int i = c_arr.length - 1; i >= 0; i--)
