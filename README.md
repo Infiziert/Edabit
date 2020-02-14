@@ -1,3 +1,3 @@
 ***
-##### Some solutions for challanges on https://www.edabit.com/
+##### Some solutions for challenges on https://www.edabit.com/
 ***
