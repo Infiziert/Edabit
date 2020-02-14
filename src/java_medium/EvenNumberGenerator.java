@@ -30,6 +30,4 @@ public class EvenNumberGenerator {
         arr[arr.length - 1] = element;
         return arr;
     }
-
-
 }
