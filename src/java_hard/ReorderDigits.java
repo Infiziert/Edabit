@@ -1,7 +1,7 @@
 package java_hard;
 
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Create a function that reorders the digits of each numerical element in an array based on ascending (asc) or descending (desc) order.
@@ -22,8 +22,13 @@ public class ReorderDigits {
      * Numbers in the array should be kept the same order.
      */
     public static int[] reorderDigits(int[] arr, String orderBy) {
-        return orderBy.equals("desc") ? Arrays.stream(arr).boxed().sorted(Collections.reverseOrder()).mapToInt(Integer::intValue).toArray()
-                : orderBy.equals("asc") ? Arrays.stream(arr).boxed().sorted().mapToInt(Integer::intValue).toArray() : null;
+        return Arrays.stream(arr)
+                .map(n -> Integer.parseInt(("" + n).chars()
+                        .mapToObj(cp -> (char)cp)
+                        .sorted(orderBy.equals("asc") ? Comparator.naturalOrder()
+                                : Comparator.reverseOrder())
+                        .collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
+                        .toString()))
+                .toArray();
     }
-
 }
