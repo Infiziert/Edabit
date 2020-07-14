@@ -22,4 +22,4 @@ public class FirstNVowels {
         return n_str.substring(0, n);
     }
 
-}
+} 
