@@ -42,5 +42,4 @@ public class KaprekarNumbers {
         }catch (NumberFormatException ignored) {}
         return kap_n == n;
     }
-
 }
