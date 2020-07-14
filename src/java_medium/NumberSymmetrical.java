@@ -19,5 +19,4 @@ public class NumberSymmetrical {
         for (int i = num; i != 0; i /= 10) num_rev = num_rev * 10 + i % 10;
         return num == num_rev;
     }
-
 }
