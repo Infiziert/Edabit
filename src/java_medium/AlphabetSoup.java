@@ -20,7 +20,7 @@ public class AlphabetSoup {
     public static String alphabetSoup(String s) {
         char[] c_arr = s.toCharArray();
         Arrays.sort(c_arr);
-        return new String(c_arr);
+        return new String(c_arr); 
     }
 
 }
