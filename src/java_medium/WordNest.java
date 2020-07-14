@@ -28,5 +28,4 @@ public class WordNest {
     public static int wordNest(String word, String nest) {
         return nest.length() / word.length() - 1;
     }
-
 }
