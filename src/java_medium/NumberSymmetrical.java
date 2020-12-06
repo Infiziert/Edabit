@@ -13,11 +13,10 @@ public class NumberSymmetrical {
         System.out.println(isSymmetrical(9939));
         System.out.println(isSymmetrical(1112111));
     }
-
+ 
     public static boolean isSymmetrical(int num) {
         int num_rev = 0;
         for (int i = num; i != 0; i /= 10) num_rev = num_rev * 10 + i % 10;
         return num == num_rev;
     }
-
 }

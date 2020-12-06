@@ -24,7 +24,7 @@ public class NewNumbers {
 
     /**
      * Write a function that takes a non-negative integer and returns true if the integer is a new number and false if it is not.
-     * A curious fact: out of the first one million integers, only 8002 are new.
+     * A curious fact: out of the first one million integers, only 8002 are new. 
      */
     public static boolean isNew(int num) {
         return (!(num > Integer.parseInt(Arrays.stream(("" + num).split("")).sorted().collect(Collectors.joining()).replaceAll("(0+)([^0])(.*)", "$2$1$3"))));

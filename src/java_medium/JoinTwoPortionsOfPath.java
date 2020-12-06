@@ -20,5 +20,4 @@ public class JoinTwoPortionsOfPath {
     public static String joinPath(String portion1, String portion2) {
         return portion1.replaceAll("[/]", "") + "/" + portion2.replaceAll("[/]", "");
     }
-
 }

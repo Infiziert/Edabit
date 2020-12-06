@@ -15,5 +15,4 @@ public class GrabCity {
     public static String grabCity(String str) {
         return str.substring(str.lastIndexOf('[') + 1, str.lastIndexOf(']'));
     }
-
 }
